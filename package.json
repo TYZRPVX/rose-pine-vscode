@@ -20,7 +20,7 @@
 		"vscode": "^1.57.0"
 	},
 	"scripts": {
-		"build": "pinecone && npm run format",
+		"build": "pinecone && node scripts/build-bordered.js && npm run format",
 		"watch": "pinecone --watch",
 		"format": "prettier --write .",
 		"release": "npx np@latest --no-publish --no-tests",
@@ -80,6 +80,21 @@
 				"label": "Rosé Pine Dawn (no italics)",
 				"uiTheme": "vs",
 				"path": "./themes/rose-pine-dawn-no-italics-color-theme.json"
+			},
+			{
+				"label": "Rosé Pine Bordered",
+				"uiTheme": "vs-dark",
+				"path": "./themes/rose-pine-bordered-color-theme.json"
+			},
+			{
+				"label": "Rosé Pine Moon Bordered",
+				"uiTheme": "vs-dark",
+				"path": "./themes/rose-pine-moon-bordered-color-theme.json"
+			},
+			{
+				"label": "Rosé Pine Dawn Bordered",
+				"uiTheme": "vs",
+				"path": "./themes/rose-pine-dawn-bordered-color-theme.json"
 			}
 		]
 	},
